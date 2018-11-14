@@ -2,8 +2,8 @@
 <html>
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
-	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo.png">
+	<link rel="shortcut icon" href="/img/logo.png">
 	
 			    <title>
     Guoxing Sun's blog
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/css/mic_main.css">
     <link rel="stylesheet" href="/css/dropdownMenu.css">
-    <meta name="keywords" content="miccall">
+    <meta name="keywords" content="guoxingsun">
     
     	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	 
@@ -24,7 +24,7 @@
           content: ' ';
           position: fixed;
           top: 0;
-          background: url('/img/bg.jpg') center 0 no-repeat;
+          background: url('/img/gakki1.jpg') center 0 no-repeat;
           right: 0;
           bottom: 0;
           left: 0;
