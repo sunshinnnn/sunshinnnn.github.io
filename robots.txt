@@ -1,0 +1,13 @@
+# robots.txt generated at http://tool.chinaz.com/robots/ 
+User-agent: Baiduspider
+Disallow: 
+User-agent: Googlebot
+Disallow: 
+User-agent: Bingbot
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /images/
+Sitemap: https://sunshinnnn.github.io/sitemap.xml
