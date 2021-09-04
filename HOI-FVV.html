@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0081)https://chenxin.tech/files/Paper/TOG2021_TightCap/project_page_TightCap/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Neural Free-Viewpoint Performance Rendering under Complex Human-object Interactions, ACM MM 2021 </title>
+	
+
+	<!-- Meta tags for Zotero grab citation -->
+	<meta name="citation_title" content="Neural Free-Viewpoint Performance Rendering under Complex Human-object Interactions">
+	<meta name="citation_author" content="Guoxing, Sun">
+	<meta name="citation_author" content="Xin, Chen">
+	<meta name="citation_author" content="Yizhang, Chen">
+	<meta name="citation_author" content="Anpei, Pang">
+	<meta name="citation_author" content="Yuheng, Jiang">
+	<meta name="citation_author" content="Pei, Lin">
+	<meta name="citation_author" content="Lan, Xu">
+	<meta name="citation_author" content="Jingya, Wang">
+	<meta name="citation_author" content="Jingyi, Yu">
+	<meta name="citation_publication_date" content="2021">
+	<meta name="citation_conference_title" content="ACM MM">
+	<meta name="citation_pdf_url" content="https://sunshinnnn.github.io/HOI-FVV.html">
+
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="4D reconstruction of human-object interaction is critical for immersive VR/AR experience and human activity understanding. Recent advances still fail to recover fine geometry and texture results from sparse RGB inputs, especially under challenging human-object interactions scenarios. In this paper, we propose a neural human performance capture and rendering system to generate both high-quality geometry and photo-realistic texture of both human and objects under challenging interaction scenarios in arbitrary novel views, from only sparse RGB streams. To deal with complex occlusions raised by human-object interactions, we adopt a layer-wise scene decoupling strategy and perform volumetric reconstruction and neural rendering of the human and object. Specifically, for geometry reconstruction, we propose an interaction-aware human-object capture scheme that jointly considers the human reconstruction and object reconstruction with their correlations. Occlusion-aware human reconstruction and robust human-aware object tracking are proposed for consistent 4D human-object dynamic reconstruction. For neural texture rendering, we propose a layer-wise human-object rendering scheme, which combines direction-aware neural blending weight learning and spatial-temporal texture completion to provide high-resolution and photo-realistic texture results in the occluded scenarios. Extensive experiments demonstrate the effectiveness of our approach to achieve high-quality geometry and texture reconstruction in free viewpoints for challenging human-object interactions.">
+	<link rel="author" href="https://sunshinnnn.github.io/">
+
+	<!-- Fonts and stuff -->
+	<!-- <link href="./projects/HOI-FVV/css" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" type="text/css" href="./projects/HOI-FVV/project.css" media="screen">
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="./projects/HOI-FVV/iconize.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="jemdoc.css"> -->
+	<script src="./projects/HOI-FVV/prettify.js.download"></script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="">
+	<div id="content">
+		<div id="content-inner">
+			<div class="section logos" style="text-align:center">
+				<a href="http://www.shanghaitech.edu.cn/" target="_blank"><img src="./projects/HOI-FVV/shanghaitech-logo.svg" height="60"></a>
+				<a href="http://vic.shanghaitech.edu.cn/" target="_blank"><img src="./projects/HOI-FVV/center-logo.png" height="60"></a>
+				<a href="https://www.ucas.ac.cn/" target="_blank"><img src="./projects/HOI-FVV/UCAS.jpg" height="60"></a>
+			</div>
+
+			<div class="section head">
+			
+				<h1>Neural Free-Viewpoint Performance Rendering under <br>Complex Human-object Interactions</h1>
+				<!-- <p><img alt="figure" src="./ProjectPage/image/AutoSweep_tesar.jpg" id = "Tesar"/></p> -->
+
+				<div class="authors">
+					<a href="https://sunshinnnn.github.io/" target="_blank">Guoxing Sun</a><sup>1</sup>&nbsp;&nbsp;
+					Xin Chen<sup>1,2</sup>&nbsp;&nbsp;
+					Yizhang Chen<sup>1</sup>&nbsp;&nbsp;					
+					Anqi Pang<sup>1,2</sup>&nbsp;&nbsp;
+					Yuheng Jiang<sup>1</sup>&nbsp;&nbsp;
+					Pei Lin<sup>1</sup>&nbsp;&nbsp;
+					<a href="http://xu-lan.com/" target="_blank">Lan Xu</a><sup>1</sup>&nbsp;&nbsp;
+					<a href="http://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/" target="_blank">Jingya Wang</a><sup>1,*</sup>&nbsp;&nbsp;
+					<a href="http://vic.shanghaitech.edu.cn/vrvc/en/people/jingyi-yu/" target="_blank">Jingyi Yu</a><sup>1,*</sup>&nbsp;&nbsp;
+				</div>
+
+				<div class="affiliations">
+					<sup>1</sup><a href="http://www.shanghaitech.edu.cn/" target="_blank">ShanghaiTech University</a> &nbsp;&nbsp;
+					<sup>2</sup><a href="https://www.leeds.ac.uk/" target="_blank">University of Chinese Academy of Sciences</a>&nbsp;&nbsp;
+				</div>
+
+				<div class="venue">(<a href="https://2021.acmmm.org/" target="_blank">ACM MM 2021 Oral</a>)</div>
+				<!-- <div class="venue">(Special issue in human pose, motion, activities, and shape in 3d)</div> -->
+			</div>
+			<div class="section teaser">
+				<iframe src="https://www.youtube.com/watch?v=wr-6wwt8RXk" allow="autoplay; encrypted-media" preload="" muted="" allowfullscreen="" width="600" height="352" frameborder="0"></iframe> 
+				<p style="font-size:11px; text-align:center">
+					(Placeholder) Download Video: <a href="https://www.youtube.com/watch?v=wr-6wwt8RXk" target="_blank">HD</a> (MP4, 59 MB)
+				</p>
+			</div>
+
+			<div class="section abstract">
+				<h2>Teaser</h2>
+				<div class="section teaser2">
+				<img src="./projects/HOI-FVV/teaser.png" width="90%" text-align="center">
+				</div>
+				<p>
+					Our approach achieves photo-realistic reconstruction results of human activities in novel views under challenging human-object interactions, using only six RGB cameras. (a) Capture setting. (b) Our results.
+				</p>
+			</div>
+
+			<div class="section abstract">
+				<h2>Abstract</h2>
+				<div class="abstract_">
+				<p>
+					4D reconstruction of human-object interaction is critical for immersive VR/AR experience and human activity understanding. Recent advances still fail to recover fine geometry and texture results from sparse RGB inputs, especially under challenging human-object interactions scenarios. In this paper, we propose a neural human performance capture and rendering system to generate both high-quality geometry and photo-realistic texture of both human and objects under challenging interaction scenarios in arbitrary novel views, from only sparse RGB streams. To deal with complex occlusions raised by human-object interactions, we adopt a layer-wise scene decoupling strategy and perform volumetric reconstruction and neural rendering of the human and object. Specifically, for geometry reconstruction, we propose an interaction-aware human-object capture scheme that jointly considers the human reconstruction and object reconstruction with their correlations. Occlusion-aware human reconstruction and robust human-aware object tracking are proposed for consistent 4D human-object dynamic reconstruction. For neural texture rendering, we propose a layer-wise human-object rendering scheme, which combines direction-aware neural blending weight learning and spatial-temporal texture completion to provide high-resolution and photo-realistic texture results in the occluded scenarios. Extensive experiments demonstrate the effectiveness of our approach to achieve high-quality geometry and texture reconstruction in free viewpoints for challenging human-object interactions.
+				</p>
+				</div>
+			</div>
+			<!-- <br> -->
+			<div class="section abstract">
+				<h2>Comparsion on novel view synthesis</h2>
+				<center>
+					<video height ="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+						<source src="./projects/HOI-FVV/comparsion.mp4" type="video/mp4">
+					</video>
+<!-- 			        <video width="80%"; playsinline="" autoplay="autoplay" loop="" preload="" muted="">
+				        <source src="projects/HOI-FVV/comparsion.mp4" type="video/mp4">
+			        	<source src="images/comparsion.mp4" type="video/mp4">
+			        </video> -->
+				</center>
+			</div>
+<!-- 			<div class="Related works">
+				<h2>Acknowledgments</h2>
+				<p>
+					This work was supported by NSFC programs (61976138, 61977047), the National Key Research and Development Program (2018YFB2100500), STCSM (2015F0203-000-06), SHMEC (2019-01-07-00-01-E00003 ) and Shanghai YangFan Program (21YF1429500). We thank Yannan He and Han Liang for discussions and helps about human tracking.
+				</p>
+			</div> -->
+
+			<div class="section downloads">
+				<h2>Downloads</h2>
+				<center>
+				<ul>
+					<li class="grid">
+						<div class="griditem">
+							<a href="https://arxiv.org/pdf/2108.00362.pdf" target="_blank" class="imageLink"><img src="./projects/HOI-FVV/pdf.png"></a><br>
+							Paper<br>
+							<a href="https://arxiv.org/pdf/2108.00362.pdf" target="_blank">PDF, 39 MB</a>
+						</div>
+					</li>
+					<li class="grid"> 
+						<div class="griditem"> 
+						<a href="https://www.youtube.com/watch?v=wr-6wwt8RXk" target="_blank" class="imageLink"><img src="./projects/HOI-FVV/mp4.png"></a><br>
+						Video<br> 
+						<a href="https://www.youtube.com/watch?v=wr-6wwt8RXk" target="_blank">MP4, 59 MB</a>
+						<br> 
+						</div>
+					</li>					
+				</ul>
+				</center>
+			</div>
+
+			<div class="section acknowledgments">
+				<h2>Technical Paper</h2>
+				<div class="teaser">
+					<a href="https://arxiv.org/pdf/2108.00362.pdf" target="_blank"><img src="./projects/HOI-FVV/paper_new.jpg" width="80%"></a>
+				</div>
+			</div>
+
+			<div class="section abstract">
+				<h2>Related Works</h2>
+				<ul>
+					<li>
+						<a href="https://jasonyzhang.com/phosa/" target="_blank">Perceiving 3D Human-Object Spatial Arrangements from a Single Image in the Wild(ECCV2020)</a>   
+					</li>
+					<li>
+						<a href="https://www.youtube.com/watch?v=45g2Pxg7Ot4" target="_blank">NeuralHumanFVV: Real-Time Neural Volumetric Human Performance Rendering using RGB Cameras(CVPR2021)</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/watch?v=4sGFguHXsk0&t" target="_blank">RobustFusion: Robust Volumetric Performance Reconstruction under Human-object Interactions(TPMAI2021)</a> <br>
+					</li>
+					<li>
+						<a href="http://4dqv.mpi-inf.mpg.de/GraviCap/" target="_blank">Gravity-Aware Monocular 3D Human-Object Reconstruction(ICCV2021)</a> <br>
+					</li>
+					<li>
+						<a href="https://github.com/facebookresearch/d3d-hoi" target="_blank">D3D-HOI: Dynamic 3D Human-Object Interactions from Videos(arxiv2021)</a> <br>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section acknowledgments">
+				<h2>Acknowledgments</h2>
+				<p>
+					This work was supported by NSFC programs (61976138, 61977047), the National Key Research and Development Program (2018YFB2100500), STCSM (2015F0203-000-06), SHMEC (2019-01-07-00-01-E00003 ) and Shanghai YangFan Program (21YF1429500). We thank Yannan He and Han Liang for discussions and helps about human tracking.
+				</p>
+			</div>
+
+
+
+
+
+
+			<!-- <div class="section list"> -->
+
+	<div class="section bibtex">
+		<h2>Citation</h2>
+		<pre>@inproceedings{sun2021HOI-FVV,
+      title={Neural Free-Viewpoint Performance Rendering under Complex Human-object Interactions}, 
+      author={Sun, Guoxing and Chen, Xin and Chen, Yizhang and Pang, Anqi and Lin, Pei and Jiang, Yuheng and Xu, Lan and Wang, Jingya and Yu, Jingyi},
+      year={2021},
+      booktitle={Proceedings of the 29th ACM International Conference on Multimedia}, 
+}</pre></div>
+			<!-- </div> -->
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	      <p style="text-align:center;font-size:small;">
+	        This project page's template is adapted from <a href="https://chenxin.tech/files/Paper/TOG2021_TightCap/project_page_TightCap/index.htm"><font size="2">TightCap</font></a> and <a href="https://vcai.mpi-inf.mpg.de/projects/NeuralActor/"><font size="2">Neural Actor</font></a>.
+	      </p>
+	</tbody></table>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
